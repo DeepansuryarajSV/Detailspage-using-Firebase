@@ -1,0 +1,215 @@
+:root{
+    --bgcolor: #212529;
+    --primary: #0D6EFD;
+    --secondary: #202B3C;
+    --tertiary: #6fa9ff;
+    --fontcolor: #B7BFC8;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main-container{
+    display: flex;
+    backdrop-filter: blur(5px);
+}
+
+.blur::before,
+.blur::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      backdrop-filter: blur(3px);
+}
+
+.form{
+    width: 40vw;
+    height: 100vh;
+    text-align: center;
+    padding-top: 5%;
+    background-color: var(--bgcolor);
+}
+
+.title{
+    color: var(--primary);
+}
+
+.table-container{
+    width: calc(100vw - 40vw);
+    background-color: var(--bgcolor);
+    padding-right: 20px;
+}
+
+.form input, textarea, button{
+    border: none;
+    border-radius: 5px;
+    width: 70%;
+    background-color: var(--secondary);
+    color: #fff;
+    padding-left: 10px;
+}
+
+.form input::placeholder,.form textarea::placeholder, .update-modal input::placeholder, .update-modal textarea::placeholder{
+    color: var(--fontcolor);
+    padding-left: 10px;
+}
+
+.form input{
+    height: 40px;
+}
+
+.form textarea{
+    resize: none;
+}
+
+.form button{
+    height: 6%;
+    background-color: var(--primary);
+    color: white;
+}
+.form button:active{
+    background-color: var(--tertiary);
+}
+
+/* table style */
+
+.data-table {
+    border-collapse: collapse;
+    width: 70%;
+}
+
+#table-container {
+  max-height: 85vh; /* Adjust the height as per your requirements */
+  overflow-y: auto;
+}
+
+.data-table {
+  width: 100%;
+}
+
+  
+.data-table tbody {
+max-height: 200px; /* Adjust the height as per your requirements */
+overflow-y: auto;
+}
+  
+.data-table th,
+.data-table td {
+border: 1px solid var(--fontcolor);
+color: var(--fontcolor);
+padding: 8px;
+}
+
+.data-table th {
+background-color: var(--secondary);
+color: var(--fontcolor);
+text-align: left;
+}
+
+.data-table tr:nth-child(even) {
+background-color: var(--secondary);
+color: var(--fontcolor);
+}
+
+.caption{
+    margin: 10px;
+    text-align: center;
+    color: var(--primary);
+}
+
+.thead{
+    position: sticky;
+    color: var(--fontcolor);
+}
+
+.updatebtn{
+    background-color: #28A745;
+    margin-bottom: 5px;
+}
+
+.updatebtn:active{
+    background-color: #1d7a33;
+}
+
+.deletebtn{
+    background-color: #DC3545;
+
+}
+
+.deletebtn:active{
+    background-color: #d76974;
+}
+
+.update-modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: #42484e;
+    padding: 20px;
+    border-radius: 8px;
+    visibility: hidden;
+}
+
+.update-modal input,.update-modal textarea,.update-modal button{
+    width: 100%;
+}
+
+.update-title{
+    text-align: center;
+    margin-bottom: 10px;
+    color: var(--primary);
+}
+
+.update-modal input,.update-modal textarea,.update-modal button {
+    border: none;
+    border-radius: 5px;
+    width: 70%;
+    background-color: var(--secondary);
+    color: #fff;
+    padding-left: 10px;
+    width: 100%;
+    
+}
+
+.update-modal textarea{
+    resize: none;
+}
+
+.update-modal input, .update-modal button {
+    height: 30px;
+}
+
+.update-modal button{
+    background-color: #28A745;
+    margin-bottom: 20px;
+}
+
+.update-modal button:active{
+    background-color: #1d7a33;
+}
+
+.update-modal button{
+    background-color: #28A745;
+    margin-bottom: 20px;
+}
+
+.update-modal button:active{
+    background-color: #1d7a33;
+}
+
+#closebtn{
+    background-color: #DC3545;
+}
+
+#closebtn:active{
+    background-color: #d76974;
+}
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nrich Learning</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" type="module"></script>
+</head>
+<body>
+    <div class="main-container">
+        <div class="form">
+            <h2 class="title">Enter Details</h2> <br> <br>
+            <input type="text" id="name" placeholder="Enter Name"> <br> <br>
+            <input type="email" id="email" placeholder="Enter Email"> <br> <br>
+            <textarea id="message" cols="30" rows="10" placeholder="Enter Message"></textarea> <br> <br>
+            <button type="button" id="submitbtn">Submit</button>
+        </div>
+        <div class="table-container" >
+            <h2 class="caption">Data Table</h2>
+            <div id="table-container">
+                <table id="table">
+                </table>
+            </div> 
+        </div>
+    </div>
+    <div class="update-modal" id="update-modal">
+        <h3 class="update-title">Update Details</h3>
+        <input type="text" id="uname" placeholder="Enter Name" > <br> <br>
+        <input type="email" id="uemail" placeholder="Enter Email"> <br> <br>
+        <textarea id="umessage" cols="30" rows="10" placeholder="Enter Message"></textarea> <br> <br>
+        <button type="button" id="updatebtn">Update</button>
+        <button type="button" id="closebtn">Close</button>
+    </div>
+</body>
+</html>
